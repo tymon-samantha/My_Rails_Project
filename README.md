@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+My name is Samantha Tymon. I am a Web Developer. I live in the States, but I love to travel the world. I have experience working with mobile apps, bug testing and problem solving, but this will be my first web app; and it will work as an e-commerce website.
