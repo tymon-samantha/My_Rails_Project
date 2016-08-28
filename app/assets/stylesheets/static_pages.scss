@@ -1,3 +1,69 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+* {
+	margin-bottom: 0;
+}
+html, 
+body {
+	height: 100%;
+}
+.page-wrap {
+	min-height: 100%;
+	/* margin-bottom equal to height of footer */
+	margin-bottom: -40px;
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+.site-footer, 
+.page-wrap:after {
+	height: 40px;
+}
+.site-footer {
+	background-color: #cc463b;
+	color: white;
+}
+h1 {
+	color: red;
+	text-align: center;
+	font-family: sans-serif;
+	margin-top: 60px;
+}
+
+/*** Navbar ***/
+li {
+	display: inline-block;
+	font-family: sans-serif;
+	color: #521B17;
+	font-size: 1.5em;
+	padding-left: 10px;
+}
+nav, 
+.navbar {
+	background-color: #cc463b;
+	border-color: #cc463b;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+	color: #521B17;
+	background-color: #FF9890;
+}
+a.projectname {
+	color: white;
+}
+.nav-pills>li+li {
+	margin-left: -6px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+/* when hover over navbar buttons */
+.navbar-default .navbar-nav>.active>a:hover {
+	text-transform: uppercase;
+	background-color: white;
+	font-style: italic;
+	font-weight: bold;
+}
