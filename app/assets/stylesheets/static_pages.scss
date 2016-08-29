@@ -1,7 +1,4 @@
 // Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 
 * {
 	margin-bottom: 0;
@@ -9,6 +6,10 @@
 html, 
 body {
 	height: 100%;
+}
+body {
+	background-color: #b53f3f;
+	font-family: Oswald, Futura, Helvetica, Arial, sans-serif;
 }
 .page-wrap {
 	min-height: 100%;
@@ -24,28 +25,62 @@ body {
 	height: 40px;
 }
 .site-footer {
-	background-color: #cc463b;
+	background-color: #ff9890;
 	color: white;
 }
 h1 {
-	color: red;
+	color: white;
 	text-align: center;
-	font-family: sans-serif;
-	margin-top: 60px;
+	margin-top: 80px;
+}
+#welcome {
+	margin-top: 30px;
+}
+p, 
+h2 {
+	text-align: center;
+	color: white;
+}
+.date {
+	position: absolute;
+	top: 60px;
+}
+.my-image {
+	width: 60%;
+	margin: 0 auto 20px;
+	border: solid 2px black;
+}
+
+/* About Page*/
+.about-image {
+	width: 100%;
+}
+
+/* Contact Page */
+.contact-message {
+	font-size: 2.4em;
+	border: dotted 3px black;
+	border-radius: 10px;
+}
+.tel-num, 
+.address {
+	font-size: 1.5em;
 }
 
 /*** Navbar ***/
 li {
 	display: inline-block;
-	font-family: sans-serif;
 	color: #521B17;
 	font-size: 1.5em;
 	padding-left: 10px;
 }
+.nav-pills>li.active>a {
+	border: solid 1px white;
+}
 nav, 
 .navbar {
-	background-color: #cc463b;
-	border-color: #cc463b;
+	background-color: #5d2420;
+	border-color: #5d2420;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
 	color: #521B17;
