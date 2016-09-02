@@ -1,0 +1,39 @@
+// Place all the styles related to the products controller here.
+
+table {
+	color: white;
+}
+th, 
+td {
+	display: inline-block;
+	margin: 20px 80px;
+	font-size: 2em;
+}
+
+label {
+	color: white;
+	font-size: 2em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+textarea {
+	width: 350px;
+	height: 200px;
+}
+
+#product_name {
+	width: 200px;
+}
+#product_image_url {
+	width: 410px;
+}
+
+form#new_product, 
+.page-wrap>a {
+	margin-left: 80px;
+}
+
+.page-wrap>a {
+	font-size: 1.5em;
+}

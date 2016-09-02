@@ -32,6 +32,11 @@ h1 {
 	color: white;
 	text-align: center;
 	margin-top: 80px;
+	border-bottom: solid 1px #521B17;
+}
+#products-header {
+	text-align: left;
+	padding-left: 80px;
 }
 #welcome {
 	margin-top: 30px;
@@ -50,6 +55,13 @@ h2 {
 	margin: 0 auto 20px;
 	border: solid 2px black;
 }
+/* Make Hidden Menu Show as a List */
+@media screen and (max-width: 770px){
+ 	//MOBILE ONLY STYLES
+ 	.date {
+ 		position: absolute;
+ 		top: 20px;
+}}
 
 /* About Page*/
 .about-image {
@@ -102,3 +114,12 @@ a.projectname {
 	font-style: italic;
 	font-weight: bold;
 }
+/* Make Hidden Menu Show as a List */
+@media screen and (max-width: 770px){
+ 	//MOBILE ONLY STYLES
+	.nav-pills>li, 
+	.nav-pills > li + li {
+		float: none;
+		width: 50%;
+		margin-left: 24%;
+}}
