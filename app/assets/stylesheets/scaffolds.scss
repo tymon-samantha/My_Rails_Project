@@ -6,7 +6,10 @@ body {
   line-height: 18px;
 }
 
-p, ol, ul, td {
+p, 
+ol, 
+ul, 
+td {
   font-family: Oswald, Futura, Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -52,6 +55,7 @@ td {
   padding-right: 5px;
   color: white;
   font-size: 1.5em;
+  margin: 33px 80px;
 }
 
 div {
@@ -97,4 +101,13 @@ div {
 
 label {
   display: block;
+}
+
+strong {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+#notice {
+  margin-bottom: 85px;
 }
