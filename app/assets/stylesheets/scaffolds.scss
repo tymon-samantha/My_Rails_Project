@@ -122,3 +122,78 @@ strong {
   width: 450px;
   border: solid 1px black;
 }
+
+/* Carousel */
+
+.carousel-caption p {
+  color: black;
+  position: fixed;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    width: 100%;
+    height: 1000px;
+  }
+  .carousel-caption p {
+    top: 60px;
+    left: 60px;
+    font-size: 3em;
+}}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .carousel {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    width: 100%;
+    height: 1000px;
+  }
+  .carousel-caption p {
+    top: 60px;
+    left: 60px;
+    font-size: 3em;
+}}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .carousel {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    width: 100%;
+    height: 300px;
+  }
+  .carousel-caption p {
+    top: 13px;
+    left: 30px;
+    font-size: 2em;
+}}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .carousel {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    width: 100%;
+    height: 300px;
+  }
+  .carousel-caption p {
+    top: 13px;
+    left: 30px;
+    font-size: 2em;
+}}
+.carousel-indicators .active, 
+.carousel-indicators li {
+  border: 1px solid black;
+  background-color: black;
+}
+.carousel-indicators .active {
+  background-color: white;
+}
