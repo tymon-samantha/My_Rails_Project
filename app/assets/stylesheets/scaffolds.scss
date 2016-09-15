@@ -160,10 +160,6 @@ strong {
 }}
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .carousel {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
   .carousel-inner>.item>a>img, .carousel-inner>.item>img {
     width: 100%;
     height: 300px;
@@ -176,10 +172,6 @@ strong {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .carousel {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
   .carousel-inner>.item>a>img, .carousel-inner>.item>img {
     width: 100%;
     height: 300px;

@@ -72,10 +72,11 @@ h2 {
 }
 
 /* Contact Page */
-.contact-message {
+p.contact-message {
   font-size: 2.4em;
   border: dotted 3px black;
   border-radius: 10px;
+  line-height: 45px;
 }
 .tel-num, 
 .address {
@@ -121,6 +122,13 @@ a.projectname {
   .nav-pills>li, 
   .nav-pills > li + li {
     float: none;
-    width: 50%;
-    margin-left: 24%;
+  }
+  li {
+    padding-left: 0px;
+  }
+  .navbar-nav {
+    margin: 7.5px -20px;
+  }
+  #home-button {
+    padding-left: 9px;
 }}
