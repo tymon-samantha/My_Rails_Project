@@ -157,12 +157,13 @@ a.projectname {
     padding-left: 9px;
 }}
 label.search-box {
-  display: inline-box;
+  display: inline-block;
   margin-top: 13px;
   font-size: 1.5em;
 }
 form#search-nav {
   margin-top: -1px;
+  margin-left: 19px;
 }
 .row {
   margin-left: 15px;
