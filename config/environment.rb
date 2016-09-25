@@ -9,7 +9,7 @@ ActionMailer::Base.smtp_settings = {
   :port => '587',
   :authentication => :plain,
   :user_name => ENV['app55760673@heroku.com'],
-  :password => ENV['bhg1ijmu1992'],
+  :password => ENV['Zhivago86'],
   :domain => 'heroku.com',
   :enable_starttls_auto => true
 }
