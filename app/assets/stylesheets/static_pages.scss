@@ -82,6 +82,30 @@ p.contact-message {
 .address {
   font-size: 1.5em;
 }
+/*Contact Form */
+.contact-form {
+  margin: auto 0;
+}
+input#message {
+  height: 7em;
+}
+input[type="submit"] {
+  margin-top: 10px;
+}
+
+/* Thank You Page */
+.thanks-panel {
+  margin-top: 70px;
+}
+.thank-you {
+  font-size: 4em;
+  color: #5d2420;
+  line-height: 55px;
+}
+.thanks-image {
+  margin: 0 auto;
+}
+
 
 /*** Navbar ***/
 li {
@@ -139,4 +163,8 @@ label.search-box {
 }
 form#search-nav {
   margin-top: -1px;
+}
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
 }
