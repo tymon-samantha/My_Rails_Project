@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div class="container">
+  <div class="row user-row1">
+    <div class="col-md-4 col-xs-4">
+      <h4 id="first-name">First name</h4>
+    </div><!-- end col 1 -->
+    <div class="col-md-4 col-xs-4">
+      <h4 id="last-name">Last name</h4>
+    </div><!-- end col 2 -->
+    <div class="col-md-4 col-xs-4">
+      <h4 id="options">Options</h4>
+    </div><!-- end col 3 -->
+  </div><!-- end row 1 -->
+  <% @users.each do |user| %>
+    <div class="row user-data">
+      <div class="col-md-4 col-xs-4">
+        <p class="name"><%= user.first_name %></p>
+      </div><!-- end col 1 -->
+      <div class="col-md-4 col-xs-4">
+        <p div class="name"><%= user.last_name %></p>
+      </div><!-- end col 2 -->
+      <div class="col-md-4 col-xs-4 options-col">
+        <p class="option-links"><%= link_to 'Show', user, :class => "option" %></p>
+        <p class="option-links"><%= link_to 'Edit', edit_user_path(user), :class => "option" %></p>
+        <p class="option-links"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, :class => "option" %></p>
+      </div><!-- end col 3 -->
+    </div><!-- end row -->
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
