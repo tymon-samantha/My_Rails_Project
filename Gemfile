@@ -49,4 +49,8 @@ group :production do
 	gem 'pg'
 end
 
+# For installing devise
 gem 'devise', '4.2.0'
+
+# For installing CanCanCan
+gem 'cancancan', '~> 1.10'

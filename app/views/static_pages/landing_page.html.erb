@@ -1,4 +1,4 @@
-<h2>Featured Product:</h2>
+<h2 class="landing-header">Featured Product:</h2>
 <%= @featured_product.try(:name) %>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -11,7 +11,7 @@
   <div class="carousel-inner" role="listbox">
     <% @product.each do |product| %>
     <div class="carousel-image item <%= "active" if product == @product.first %>">
-      <%= image_tag(product.image_url) %>
+      <%= link_to image_tag(product.image_url), product, :class =>"carousel-link" %>
       <div class="carousel-caption">
         <p><%= product.name %></p>
       </div><!-- end caption -->

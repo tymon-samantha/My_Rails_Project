@@ -25,12 +25,12 @@
             <span class="icon-bar"></span>
           </button>
           <nav class="projectName navbar-brand">
-            <a class="projectname" <%= link_to "Bike Berlin", static_pages_landing_page_path %></a>
+            <a class="projectname" <%= link_to "Bike Berlin", static_pages_index_path %></a>
           </nav><!-- end projectName -->
         </div><!-- end navbar header -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav nav-pills">
-            <li role="presentation" class="active"><a id="home-button" <%= link_to "Home", static_pages_index_path %></a><span class="sr-only">(current)</span></li>
+            <li role="presentation" class="active"><a id="home-button" <%= link_to "Home", static_pages_landing_page_path %></a><span class="sr-only">(current)</span></li>
             <li role="presentation" class="active"><a <%= link_to "About", static_pages_about_path %></a><span class="sr-only">(current)</span></li>
             <li role="presentation" class="active"><a <%= link_to "Contact", static_pages_contact_path %></a><span class="sr-only">(current)</span></li>
             <li role="presentation" class="active"><a <%= link_to "Products", products_path %></a><span class="sr-only">(current)</span></li>
@@ -55,11 +55,33 @@
         </div><!-- end div navbar-collapse -->
       </div><!-- end container -->
     </nav>
-    <p class="notice"><%= notice %></p>
+
+    <div class="error-notices">
+      <div class="notice" role="notice">
+        <% if notice %>
+          <p id="notice" class="alert alert-info"><%= notice %></p>
+        <% end %>
+      </div>
+      <div class="alert" role="alert">
+        <% if alert %>
+          <p id="alert" class="alert alert-info"><%= alert %></p>
+        <% end %>
+      </div>
+    </div>
+
     <div class="page-wrap">
       <%= yield %>
     </div><!-- end page wrap -->
     <footer class="site-footer">&copy; 2016 Samantha Tymon
     </footer>
+      <!-- ============================= -->
+      <!-- All your JavaScript comes now -->
+      <!-- ============================= -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Bootstrap core JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     
+       <!-- Can place script tags with JavaScript files here -->
+      <%= javascript_include_tag "application" %>
   </body>
 </html>
