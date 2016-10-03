@@ -52,6 +52,7 @@
     </div><!-- end col 1 -->
     <div class="col-md-6 col-xs-12">
       <%= render "comments", product: @comments %>
+      <%= will_paginate @comments %>
     </div><!-- end col 2 -->
   </div><!-- end row 2 -->
   <div class="row">

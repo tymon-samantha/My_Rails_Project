@@ -54,3 +54,6 @@ gem 'devise', '4.2.0'
 
 # For installing CanCanCan
 gem 'cancancan', '~> 1.10'
+
+# For Pagination
+gem 'will_paginate'
