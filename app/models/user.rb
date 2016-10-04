@@ -5,3 +5,17 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :orders
 end
+
+class Ability
+  include CanCan::Ability
+
+  def intialize(user)
+    user ||= User.new
+    if user.admin?
+      can :manage, :all
+    else
+      cannot :destroy, Comment
+      can :read, :all
+    end
+  end
+end
