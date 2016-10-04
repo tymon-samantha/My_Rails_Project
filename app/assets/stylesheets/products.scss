@@ -73,3 +73,34 @@ form#new_product,
   width: 100%;
   border: solid 1px black;
 }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  textarea#product_description, 
+  input#product_image_url, 
+  form.edit_product, 
+  form#new_product {
+    margin-left: 0;
+  }
+  textarea#product_description, 
+  input#product_image_url {
+    width: 100%;
+  }
+  .action-link {
+    margin: 6px;
+}}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  textarea#product_description, 
+  input#product_image_url, 
+  form.edit_product, 
+  form#new_product {
+    margin-left: 0;
+  }
+  textarea#product_description, 
+  input#product_image_url {
+    width: 100%;
+  }
+  .action-link {
+    margin: 6px;
+}}
