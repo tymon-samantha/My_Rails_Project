@@ -26,3 +26,4 @@ describe Product do
 
   end
 
+

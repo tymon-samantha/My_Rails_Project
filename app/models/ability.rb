@@ -7,7 +7,7 @@ class Ability
       can :manage, :all
     else
       cannot :destroy, Comment
-      can :read, :all
+      can :read, :comments, :rating
       can :manage, User, id: user.id
     end
   end
