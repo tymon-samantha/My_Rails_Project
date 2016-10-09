@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -60,6 +60,7 @@ gem 'will_paginate'
 
 group :test, :development do
   gem 'rspec-rails', '~> 3.5.2'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.1'
