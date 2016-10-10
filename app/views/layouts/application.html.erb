@@ -34,12 +34,17 @@
             <li role="presentation" class="active"><a <%= link_to "About", static_pages_about_path %></a><span class="sr-only">(current)</span></li>
             <li role="presentation" class="active"><a <%= link_to "Contact", static_pages_contact_path %></a><span class="sr-only">(current)</span></li>
             <li role="presentation" class="active"><a <%= link_to "Products", products_path %></a><span class="sr-only">(current)</span></li>
-             <li role="presentation" class="active"><a <%= link_to "Users", users_path %></a><span class="sr-only">(current)</span></li>
+            <% if signed_in? && current_user.admin? %>
+              <li role="presentation" class="active"><a <%= link_to "Users", users_path %></a><span class="sr-only">(current)</span></li>
+            <% end%>
+            <% if signed_in? %>
+              <li role="presentation" class="active"><a <%= link_to 'Profile', current_user %></a><span class="sr-only">(current)</span></li>
+            <% end %>
             <li> 
               <%= form_tag("/products", method: "get", :id => "search-nav") do %>
                 <%= label_tag(:q, "Search for:", :class => "search-box") %>
                 <%= text_field_tag(:q) %>
-                <%= submit_tag("Search") %>
+                <%= button_tag "Search", :type => "submit", :class => "btn btn-secondary" %>
               <% end %>
             </li>
           </ul>

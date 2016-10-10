@@ -6,10 +6,13 @@
 .comment-header {
   text-align: left;
 }
-input[type="submit"], 
+/* input[type="submit"], 
 textarea#comment_body {
   color: black;
-}
+} */
 textarea#comment_body {
   width: 100%;
+}
+.show-p>input.btn.btn-secondary {
+  color: black;
 }
