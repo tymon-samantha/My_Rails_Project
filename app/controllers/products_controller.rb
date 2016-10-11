@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
         @products = Product.where("name ilike ?", "%#{search_term}%")
       else
         @products = Product.where("name LIKE ?", "%#{search_term}%")
+      logger.debug "Search should show product results: #{@product}"
       end
     else
       @products = Product.all
@@ -25,6 +26,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
+    byebug
     @product = Product.new
   end
 
