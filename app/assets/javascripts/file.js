@@ -9,7 +9,7 @@ $(document).on('turbolinks:load', function(){
   });
 
   //Elevate Zoom
-  $('.img-zoom').elevateZoom({
+  $('.img-zoom').elevateZoom( {
     zoomType : "lens",
     lensShape : "round",
     lensSize : "200"
