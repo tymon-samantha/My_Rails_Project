@@ -73,3 +73,5 @@ gem 'brakeman', :require => false
 gem 'recaptcha', '~> 3.3'
 
 gem 'elevatezoom-rails'
+
+gem 'dalli'
