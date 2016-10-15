@@ -75,3 +75,5 @@ gem 'recaptcha', '~> 3.3'
 gem 'elevatezoom-rails'
 
 gem 'dalli'
+
+gem 'redis-rails'
