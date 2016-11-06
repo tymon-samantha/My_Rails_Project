@@ -10,7 +10,7 @@ var refreshRating = function() {
 };
 
 $(document).on('turbolinks:load ajaxSuccess', function(){
-  refreshRatinge();
+  refreshRating();
 
   //Elevate Zoom
   $('.img-zoom').elevateZoom( {
