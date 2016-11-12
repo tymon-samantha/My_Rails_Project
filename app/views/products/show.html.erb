@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="prod-show container">
-  <div class="row">
+  <div class="row" data-product-id="<%= @product.id %>">
     <div class="col-md-6 col-xs-12">
       <p class="show-p">
         <%= image_tag(@product.image_url, data_zoom_image: @product.image_url, class: "img-responive product-img-show img-zoom") %>
