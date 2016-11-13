@@ -2,16 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#first-name, 
-#last-name, 
-#options {
-  font-size: 3em;
-}
-h4,
-p {
-  text-align: center;
-  color: white;
-}
 .option-links {
   display: inline-block;
 }
@@ -19,10 +9,6 @@ p {
   margin-left: 10px;
 }
 
-.option, 
-.name {
-  font-size: 2em;
-}
 .user-row1, 
 .row.user-data {
   margin: 25px -15px 0;
@@ -34,6 +20,28 @@ p {
 .col-md-4.col-xs-4.options-col {
   padding-left: 9%;
 }
+
+/*** Typography ***/
+
+#first-name, 
+#last-name, 
+#options {
+  font-size: 3em;
+}
+
+h4,
+p {
+  text-align: center;
+  color: white;
+}
+
+.option, 
+.name {
+  font-size: 2em;
+}
+
+/*** Media Queries ***/
+
 @media screen and (max-width: 770px){
   //MOBILE ONLY STYLES
   #first-name, 
