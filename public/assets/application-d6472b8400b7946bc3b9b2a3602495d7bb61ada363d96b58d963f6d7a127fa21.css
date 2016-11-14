@@ -1,0 +1,795 @@
+/* line 5, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/comments.scss */
+.show-p,
+.comment-header {
+  text-align: left;
+}
+
+/* line 9, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/comments.scss */
+textarea#comment_body {
+  width: 100%;
+}
+
+/* line 12, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/comments.scss */
+textarea#comment_body,
+.show-p > input.btn.btn-secondary {
+  color: black;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 3, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+table {
+  color: white;
+}
+
+/* line 7, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.prod-listing {
+  font-size: 2em;
+}
+
+/* line 11, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+label {
+  color: white;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 18, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+textarea {
+  width: 350px;
+  height: 200px;
+}
+
+/* line 23, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+#product_image_url {
+  width: 410px;
+}
+
+/* line 27, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+form#new_product,
+.page-wrap > a {
+  margin-left: 80px;
+}
+
+/* line 32, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.page-wrap > a {
+  font-size: 1.5em;
+}
+
+/* line 36, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.product-img {
+  width: 200px;
+  border: solid 1px black;
+}
+
+/* line 41, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.product-img-col {
+  width: 100%;
+  height: 325px;
+}
+
+/* line 46, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.prod-name,
+.description,
+.prod-color,
+.prod-price {
+  line-height: 25px;
+  text-align: center;
+  border-bottom: dotted 1px black;
+}
+
+/* line 55, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.action-link {
+  display: inline-block;
+  margin: 15px;
+}
+
+/* line 60, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.links {
+  margin-left: 82px;
+}
+
+/* line 64, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+#products-header {
+  margin-left: -75px;
+}
+
+/* line 68, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.description {
+  height: 300px;
+}
+
+/* line 72, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+.product-img-show {
+  width: 100%;
+  border: solid 1px black;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 79, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+  textarea#product_description,
+  input#product_image_url,
+  form.edit_product,
+  form#new_product {
+    margin-left: 0;
+  }
+
+  /* line 85, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+  textarea#product_description,
+  input#product_image_url {
+    width: 100%;
+  }
+
+  /* line 89, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+  .action-link {
+    margin: 6px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 94, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+  textarea#product_description,
+  input#product_image_url,
+  form.edit_product,
+  form#new_product {
+    margin-left: 0;
+  }
+
+  /* line 100, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+  textarea#product_description,
+  input#product_image_url {
+    width: 100%;
+  }
+
+  /* line 104, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/products.scss */
+  .action-link {
+    margin: 6px;
+  }
+}
+/* line 1, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: Oswald, Futura, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+p,
+ol,
+ul,
+.prod-listing {
+  font-family: Oswald, Futura, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 18, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 24, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: white;
+}
+/* line 27, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #fcc;
+}
+/* line 31, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #521B17;
+  background-color: white;
+  padding: 5px;
+}
+
+/* line 38, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+a.projectname:hover {
+  background-color: #5d2420;
+  text-transform: none;
+  font-style: none;
+}
+
+/* line 44, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.prod-listing {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  font-size: 1.4em;
+}
+
+/* line 53, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 58, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 62, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 68, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 76, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 87, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 93, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.field label {
+  display: block;
+}
+
+/* line 97, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  margin-bottom: 85px;
+}
+
+/* line 101, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.product {
+  border: solid 1px black;
+  width: 100%;
+}
+
+/* line 106, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.edit_product {
+  margin-left: 80px;
+}
+
+/* line 110, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.show-p {
+  font-size: 1.5em;
+  line-height: 25px;
+}
+
+/* line 115, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+strong {
+  font-size: 2em;
+  margin-right: 20px;
+  line-height: 30px;
+}
+
+/* Carousel */
+/* line 123, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.carousel-caption p {
+  color: black;
+  position: fixed;
+}
+
+/* line 128, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+a.carousel-link:hover {
+  text-transform: none;
+  padding: 0px;
+}
+
+@media (min-width: 1200px) {
+  /* line 134, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+  .carousel-inner > .item > a > img, .carousel-inner > .item > img {
+    width: 100%;
+    height: 1000px;
+  }
+
+  /* line 139, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+  .carousel-caption p {
+    top: 60px;
+    left: 60px;
+    font-size: 3em;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 147, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+  .carousel-inner > .item > a > img, .carousel-inner > .item > img {
+    width: 100%;
+    height: 1000px;
+  }
+
+  /* line 152, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+  .carousel-caption p {
+    top: 60px;
+    left: 60px;
+    font-size: 3em;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 160, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+  .carousel-inner > .item > a > img, .carousel-inner > .item > img {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* line 165, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+  .carousel-caption p {
+    top: 13px;
+    left: 30px;
+    font-size: 2em;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 173, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+  .carousel-inner > .item > a > img, .carousel-inner > .item > img {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* line 178, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+  .carousel-caption p {
+    top: 13px;
+    left: 30px;
+    font-size: 2em;
+  }
+}
+/* line 184, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.carousel-indicators .active,
+.carousel-indicators li {
+  border: 1px solid black;
+  background-color: black;
+}
+
+/* line 190, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.carousel-indicators .active {
+  background-color: white;
+}
+
+/* Log In Page */
+/* line 195, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+.login-form {
+  margin: 0 auto;
+}
+
+/* line 199, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+input#user_email,
+input#user_password,
+input#user_password_confirmation,
+input#user_first_name,
+input#user_last_name {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  padding-left: 6px;
+}
+
+/* line 210, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+#login-header {
+  font-size: 3em;
+}
+
+/* line 214, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/scaffolds.scss */
+a.login-link:hover,
+a.signup-link:hover {
+  background-color: transparent;
+}
+/* line 3, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+* {
+  margin-bottom: 0;
+}
+
+/*** Navbar ***/
+/* line 8, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+li {
+  display: inline-block;
+  color: #521B17;
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+
+/* line 15, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.nav-pills > li.active > a {
+  border: solid 1px white;
+}
+
+/* line 19, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+nav,
+.navbar {
+  background-color: #5d2420;
+  border-color: #5d2420;
+}
+
+/* line 25, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus {
+  color: #521B17;
+  background-color: #FF9890;
+}
+
+/* line 30, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+a.projectname {
+  color: white;
+}
+
+/* line 34, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.nav-pills > li + li {
+  margin-left: -6px;
+}
+
+/* line 38, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/* when hover over navbar buttons */
+/* line 43, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+
+/* Make Hidden Menu Show as a List */
+@media screen and (max-width: 770px) {
+  /* line 51, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+  .nav-pills > li,
+  .nav-pills > li + li {
+    float: none;
+  }
+
+  /* line 56, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+  li {
+    padding-left: 0px;
+  }
+
+  /* line 60, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+  .navbar-nav {
+    margin: 7.5px -20px;
+  }
+
+  /* line 64, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+  #home-button {
+    padding-left: 9px;
+  }
+}
+/* line 68, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+label.search-box {
+  display: inline-block;
+  margin-top: 13px;
+  font-size: 1.5em;
+}
+
+/* line 74, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+form#search-nav {
+  margin-top: -1px;
+  margin-left: 19px;
+}
+
+/* line 79, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*** Body ***/
+/* line 86, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 91, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #b53f3f;
+  font-family: Oswald, Futura, Helvetica, Arial, sans-serif;
+}
+
+/* line 96, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  /* margin-bottom equal to height of footer */
+  margin-bottom: -40px;
+}
+
+/* line 102, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 107, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.site-footer,
+.page-wrap:after {
+  height: 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 115, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.site-footer {
+  background-color: #831818;
+  color: white;
+}
+
+/* line 120, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+h1 {
+  color: white;
+  border-bottom: solid 1px #521B17;
+}
+
+/* line 125, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+h1,
+p,
+h2 {
+  text-align: center;
+}
+
+/* line 131, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+#products-header {
+  text-align: left;
+  padding-left: 80px;
+  margin-top: 60px;
+}
+
+/* line 137, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+#welcome {
+  margin-top: 30px;
+}
+
+/* line 141, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+p,
+h2 {
+  color: white;
+}
+
+/* line 146, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.date {
+  position: absolute;
+  top: 60px;
+}
+
+/* line 151, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.my-image {
+  width: 60%;
+  margin: 0 auto 20px;
+  border: solid 2px black;
+}
+
+/* line 157, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+h2 {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 770px) {
+  /* line 163, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+  .date {
+    position: absolute;
+    top: 55px;
+  }
+}
+/* About Page*/
+/* line 170, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.about-image {
+  width: 100%;
+}
+
+/* Contact Page */
+/* line 176, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+p.contact-message {
+  font-size: 2.4em;
+  border: dotted 3px black;
+  border-radius: 10px;
+  line-height: 45px;
+}
+
+/* line 183, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.tel-num,
+.address {
+  font-size: 1.5em;
+}
+
+/* line 188, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+#contact-header {
+  margin-top: -20px;
+}
+
+/*Contact Form */
+/* line 194, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.contact-form {
+  margin: auto 0;
+}
+
+/* line 198, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+input#message {
+  height: 7em;
+}
+
+/* Thank You Page */
+/* line 204, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.thanks-panel {
+  margin-top: 70px;
+}
+
+/* line 208, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.thank-you {
+  font-size: 4em;
+  color: #5d2420;
+  line-height: 55px;
+}
+
+/* line 214, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.thanks-image {
+  margin: 0 auto;
+}
+
+/*Landing Page */
+/* line 220, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.landing-header {
+  margin-top: 60px;
+}
+
+/* line 224, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.error-notices {
+  margin-top: 50px;
+}
+
+/* line 228, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/static_pages.scss */
+.alert {
+  margin-bottom: 0px;
+  font-size: 1.3em;
+}
+/* line 5, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+.option-links {
+  display: inline-block;
+}
+
+/* line 8, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+.option {
+  margin-left: 10px;
+}
+
+/* line 12, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+.user-row1,
+.row.user-data {
+  margin: 25px -15px 0;
+  border-bottom: solid 1px white;
+}
+
+/* line 17, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+.container {
+  width: 100%;
+}
+
+/* line 20, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+.col-md-4.col-xs-4.options-col {
+  padding-left: 9%;
+}
+
+/*** Typography ***/
+/* line 26, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+#first-name,
+#last-name,
+#options {
+  font-size: 3em;
+}
+
+/* line 32, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+h4,
+p {
+  text-align: center;
+  color: white;
+}
+
+/* line 38, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+.option,
+.name {
+  font-size: 2em;
+}
+
+/*** Media Queries ***/
+@media screen and (max-width: 770px) {
+  /* line 47, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+  #first-name,
+  #last-name,
+  #options {
+    font-size: 1.4em;
+  }
+
+  /* line 52, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+  .option,
+  .name {
+    font-size: 1.2em;
+  }
+
+  /* line 56, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+  .user-row1,
+  .row.user-data {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-bottom: solid 1px white;
+  }
+}
+/* line 62, C:/Users/Samantha/Desktop/Web Development/My_rails_project/app/assets/stylesheets/users.scss */
+.users-header {
+  margin-top: 60px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
